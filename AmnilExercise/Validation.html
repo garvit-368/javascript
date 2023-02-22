@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Form</title>
+</head>
+<body>
+  <h1>Login</h1>
+  <form action="#" method="POST">
+    <div>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+    </div>
+    <div>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+    </div>
+    <div>
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+  <script>
+    // Validate the form on submission
+    const form = document.querySelector('form');
+    form.addEventListener('submit', event => {
+      const usernameInput = document.getElementById('username');
+      const passwordInput = document.getElementById('password');
+      if (!usernameInput.value || !passwordInput.value) {
+        alert('Please enter a username and password.');
+        event.preventDefault();
+      }
+    });
+  </script>
+</body>
+</html>
