@@ -1,32 +1,44 @@
+<!DOCTYPE html>
+<html>
 <head>
   <title>Stopwatch</title>
   <script type="module" src="stopwatch.js"></script>
   <script type="module" src="index.js"></script>
   <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
     .container {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			margin-top: 50px;
-		}
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+    }
 
-		h1 {
-			margin-bottom: 10px;
-		}
+    h1 {
+      margin-bottom: 10px;
+    }
 
-		#stopwatch {
-			font-size: 3em;
-			margin-bottom: 20px;
-		}
+    #stopwatch {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
 
-		button {
-			font-size: 1em;
-			margin: 5px;
-			padding: 10px 20px;
-		}
+    button {
+      font-size: 1em;
+      margin: 5px;
+      padding: 10px 20px;
+    }
   </style>
-  <body>
-	<div class="container">
-		<h1>Stopwatch
 </head>
-    </body>
+<body>
+  <div class="container">
+    <h1>Stopwatch</h1>
+    <div id="stopwatch">00:00:00.00</div>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+    <button id="reset">Reset</button>
+  </div>
+</body>
+</html>
